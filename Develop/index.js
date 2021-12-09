@@ -1,7 +1,7 @@
-const inquirer = require("inquirer");
-const fs = require("fs");
-const generateMarkdown = require("./utils/generateMarkdown.js");
-const fileNameName = "README.md"
+import { prompt } from "inquirer";
+import { writeFile } from "fs";
+import generateMarkdown from "./utils/generateMarkdown.js";
+const fileName = "README.md"
 
 
 // TODO: Include packages needed for this application
@@ -65,7 +65,7 @@ const questions = [{
 function writeToFile(fileName, data) {
 
     const markdown = generateMarkdown(data);
-    fs.writeFile(fileName, markdown, function(err) {
+    writeFile(fileName, markdown, function(err) {
         if (err) throw err;
         console.log("Success!");
     });
@@ -73,8 +73,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer
-        .prompt(questions)
+    prompt(questions)
         .then(function(data) {
             writeToFile(fileName, data)
         })
