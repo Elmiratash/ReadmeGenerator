@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generareMarkdown = require("./utils/generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown.js");
 const fileNameName = "README.md"
 
 
@@ -61,10 +61,23 @@ const questions = [{
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+    const markdown = generateMarkdown(data);
+    fs.writeFile(fileName, markdown, function(err) {
+        if (err) throw err;
+        console.log("Success!");
+    });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+        .prompt(questions)
+        .then(function(data) {
+            writeToFile(fileName, data)
+        })
+}
 
 // Function call to initialize app
 init();
