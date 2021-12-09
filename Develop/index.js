@@ -1,6 +1,6 @@
-import { prompt } from "inquirer";
-import { writeFile } from "fs";
-import generateMarkdown from "./utils/generateMarkdown.js";
+const inquirer = require("inquirer");
+const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 const fileName = "README.md"
 
 
@@ -65,7 +65,7 @@ const questions = [{
 function writeToFile(fileName, data) {
 
     const markdown = generateMarkdown(data);
-    writeFile(fileName, markdown, function(err) {
+    fs.writeFile(fileName, markdown, function(err) {
         if (err) throw err;
         console.log("Success!");
     });
@@ -73,7 +73,8 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    prompt(questions)
+    inquirer
+        .prompt(questions)
         .then(function(data) {
             writeToFile(fileName, data)
         })
