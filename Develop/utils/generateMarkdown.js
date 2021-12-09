@@ -18,27 +18,32 @@ ${ data,Description}
 
 ##Table of Contents
 [Installation](#installation)
-  [Usage](#usage)
-  [License](#liscense)
-  [Contribution](#contribution)
-  [Tests](#tests)
-  [Questions](#questions)
-  ## Installation
-  ${data.installation}
-  ## Usage
-  ${data.usage}
-  ## License
-  The application is covered under the ${data.license} license.
-  ${badge(data.license)}
-  ## Contribution
-  ${data.contribution}
-  ## Tests
-  ${data.tests}
-  ## Questions
-  **Github Username:** ${data.username}
-  **Github Profile:** www.github.com/${data.username}/
+[Usage](#usage)
+[License](#liscense)
+[Contribution](#contribution)
+[Tests](#tests)
+[Questions](#questions)
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## License
+The application is covered under the ${data.license} license.
+${badge(data.license)}
+
+## Contribution
+${data.contribution}
+
+## Tests
+${data.tests}
+
+## Questions
+**Github Username:** ${data.username}
+**Github Profile:** www.github.com/${data.username}/
   
-  **Email Address:** ${data.email}
+**Email Address:** ${data.email}
 `;
 }
 

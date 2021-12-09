@@ -7,6 +7,7 @@ const fileNameName = "README.md"
 // TODO: Include packages needed for this application
 
 // TODO: Create an array of questions for user input
+
 const questions = [{
         type: "input",
         message: "What is the title of your project?",
@@ -40,7 +41,7 @@ const questions = [{
     {
         type: "list",
         message: "Please select a type of license.",
-        name: "license"
+        name: "license",
         choices: [
             "MIT",
             "Apache",
