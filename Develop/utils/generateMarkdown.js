@@ -1,44 +1,40 @@
-//  Function contains the hardcode to generate the markdown
-function generateMarkdown(data) {
+// function to generate markdown for README
+const generateMarkdown = data => {
     return `# ${data.title}
-    [![License:MIT](https://img.shields.io/badge/License-${date.license}-yellow.svg)](https://opensource.org/licenses/MIT)
+![Github licence](http://img.shields.io/badge/license-${data.license}-blue.svg)
+    
+## Description 
+${data.description}
 
-# Description
-${data.Description}
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+    
+## Installation 
+${data.install}
 
-##Table of Contents
-[Description](#description)
-[Installation](#installation)
-[Usage](#usage)
-[License](#liscense)
-[Contribution](#contribution)
-[Tests](#tests)
-[Questions](#questions)
-
-
-## Installation
-${data.installation}
-
-## Usage
+## Usage 
 ${data.usage}
 
-## License
-The application is covered under the ${data.license} license.
-${badge(data.license)}
+## License 
+This project is license under ${data.license}
 
-## Contribution
-${data.contribution}
+## Contributing 
+${data.contributors}
 
 ## Tests
-${data.tests}
+${data.test}
 
 ## Questions
-[My Github page](https://github.com/${data.username}) 
-
-Email: ${data.email}
-${data.additional}
-
+If you have any questions about this projects, please contact me directly at ${data.email}. 
+You can view more of my projects at https://github.com/${data.github}.
 `;
 }
 
+
+// use for importing Markdown in index 
 module.exports = generateMarkdown;
