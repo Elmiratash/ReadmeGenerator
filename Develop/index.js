@@ -65,7 +65,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'What kind of license should your project have?',
-            choices: ['MIT', 'GNU'],
+            choices: ['MIT', 'GNU', 'MPL', 'Apsche', 'BSL'],
             default: ["MIT"],
             validate: nameInput => {
                 if (nameInput) {
@@ -130,17 +130,13 @@ const writeFile = data => {
     })
 };
 
-// function call to initialize program
 questions()
-    // getting user answers 
     .then(answers => {
         return generatePage(answers);
     })
-    // using data to display on page 
     .then(data => {
         return writeFile(data);
     })
-    // catching errors 
     .catch(err => {
         console.log(err)
-    })
+    });

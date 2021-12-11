@@ -1,8 +1,8 @@
-# ecds
+# Readme generator
 ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
     
 ## Description 
-rvcedsx
+This application was
 
 ## Table of Contents
 * [Installation](#installation)
@@ -13,20 +13,20 @@ rvcedsx
 * [Questions](#questions)
     
 ## Installation 
-cwdxsa
+the user should clone
 
 ## Usage 
-cdsx
+use inquirer from
 
 ## License 
 This project is license under MIT
 
 ## Contributing 
-ewdsxaza
+contributing
 
 ## Tests
-edwsxa
+npm test
 
 ## Questions
-If you have any questions about this projects, please contact me directly at ecd. 
-You can view more of my projects at https://github.com/xdcdwc.
+If you have any questions about this projects, please contact me directly at elmira.tashvighi@gmail.com. 
+You can view more of my projects at https://github.com/Elmiratash.
