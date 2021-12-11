@@ -23,7 +23,7 @@ The user should clone the repository from GitHub and download Node. This applica
 
 Use inquirer from your command line to answer questions about your project.
 Or view the link here:
-![A user clicks on slots on the color-coded calendar and edits the events.](./Develop/utils/README-Genetaror.gif)
+![A user clicks on slots on the color-coded calendar and edits the events.](![image](https://user-images.githubusercontent.com/93406585/145661331-e98406fd-bce5-4894-ad41-7621e5f481a7.png))
 
 ## License
 
